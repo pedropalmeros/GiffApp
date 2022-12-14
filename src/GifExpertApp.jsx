@@ -15,16 +15,12 @@ export const GifExpertApp = () => {
     
     return (
     <>
-        {/* titulo */}
         <h1>GifExpertApp</h1>
 
-        {/* input */}
-        <AddCategory //setCategories={ setCategories } />
+        <AddCategory 
         onNewCategory = { (value) => onAddCategory(value)}
         />
 
-        {/* Listado de Gif */}
-        <ol>
             {
                 categories.map((category) => (
                     <GifGrid 
@@ -32,7 +28,6 @@ export const GifExpertApp = () => {
                         category = { category }/> 
                 ) )
             }
-        </ol>
 
         
     </>
